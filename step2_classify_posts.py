@@ -1,33 +1,6 @@
 """
 STEP 2: Classify posts by market-relevant topic
 ================================================
-Three backend options — choose based on your setup:
-
-  --backend keyword   Zero cost, zero setup. Rule-based keyword matching.
-                      Best starting point. Catches ~80% of cases correctly.
-
-  --backend ollama    Free local LLM inference via Ollama.
-                      Requires: ollama.com → install → `ollama pull llama3`
-                      No API costs, runs on your machine, good quality.
-
-  --backend claude    Claude API (most accurate, small cost ~$0.50-1 total).
-                      Requires: ANTHROPIC_API_KEY env var
-                      console.anthropic.com → API Keys → Create Key
-
-Recommendation: run --backend keyword first to see volume/topic breakdown,
-then --backend ollama or --backend claude to improve ambiguous cases.
-
-All backends write to the same output file. The cache is shared — switching
-backends won't re-classify posts already in the cache.
-
-Run:
-  python step2_classify_posts.py --backend keyword   # fastest, free
-  python step2_classify_posts.py --backend ollama    # free, better quality
-  python step2_classify_posts.py --backend claude    # best quality, small cost
-
-Output: data/classified_posts.csv
-        data/classification_cache.json
-"""
 
 import re
 import json
