@@ -9,9 +9,6 @@ Reads the outputs from steps 1-4 and produces a set of charts:
   4. Hit rate (sentiment alignment) per topic
   5. Post volume by topic over time
 
-Run: python step5_visualise.py
-Output: output/dashboard.png  (high-res static export)
-        Inline matplotlib display
 """
 
 import json
