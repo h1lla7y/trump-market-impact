@@ -6,10 +6,6 @@ Interactive Streamlit dashboard with Plotly charts.
 Install:
   pip install streamlit plotly pandas numpy scipy
 
-Run:
-  streamlit run step6_dashboard.py
-
-  Then open http://localhost:8501 in your browser.
 """
 
 import numpy as np
