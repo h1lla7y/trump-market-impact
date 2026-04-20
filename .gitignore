@@ -1,0 +1,46 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.key
+
+# Virtual environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Databento market data (proprietary)
+data/market_windows_ob/
+data/depth_profiles/
+data/fetch_log_ob.csv
+
+# Post data (not for public distribution)
+data/raw_posts.csv
+data/classified_posts.csv
+data/classification_cache.json
+
+# All derived data (computed from Databento + post data)
+data/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log

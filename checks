@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_parquet("data/market_windows_ob/115333709586655588.parquet")
+print(df.shape)
+print(df.columns.tolist())
+print(df.index[:3])
+print(df[["mid_price","spread_bps","ob_imbalance","bid_depth","ask_depth"]].describe())
+
+df = pd.read_csv("data/event_study_results.csv")
+print(df["topic"].value_counts())
+print(f"\nTotal events analysed: {len(df)}")
