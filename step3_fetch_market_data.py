@@ -19,19 +19,6 @@ Each MBP-10 message contains:
   bid_sz_00..bid_sz_09  — bid sizes at each level
   ask_sz_00..ask_sz_09  — ask sizes at each level
   action: A(dd) C(ancel) M(odify) T(rade) F(ill)
-
-COST TIP — run this before pulling real data:
-  python step3_fetch_market_data.py --check-cost
-
-  Or to test with just 3 events first:
-  python step3_fetch_market_data.py --limit 3
-
-Run: python step3_fetch_market_data.py
-Output: data/market_windows_ob/  (one parquet per event)
-        data/fetch_log_ob.csv    (tracks fetched events)
-
-Set your Databento API key:
-  export DATABENTO_KEY="db-"
 """
 
 from dotenv import load_dotenv
