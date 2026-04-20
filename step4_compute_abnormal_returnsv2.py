@@ -35,13 +35,6 @@ Reads cached MBP-10 parquet windows from step 3 and computes:
     depth_min_pct:      minimum depth reached as % of pre-event baseline
     depth_recovery_min: minutes after post until depth recovers to 80% baseline
 
-Outputs:
-  data/event_study_results.csv      per-event metrics
-  data/topic_summary.csv            SAR aggregated by topic × horizon
-  data/microstructure_summary.csv   microstructure aggregated by topic
-  data/depth_profiles/              per-event depth time series (5s intervals)
-
-Run: python step4_compute_abnormal_returns.py
 """
 
 import warnings
