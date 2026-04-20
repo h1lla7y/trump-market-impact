@@ -1,6 +1,6 @@
 # Trump Truth Social → SPY Market Impact Analysis
 
-An event study examining whether Donald Trump's Truth Social posts produce measurable abnormal returns and microstructure distortions in SPY (S&P 500 ETF).
+An event study examining whether Donald Trump's Truth Social posts produce measurable impact (abnormal returns and microstructure distortions) in SPY (S&P 500 ETF).
 
 ## Overview
 
