@@ -100,23 +100,6 @@ Streamlit + Plotly dashboard with filtering, drill-down, and real-time updates.
 
 ---
 
-## Project Structure
-
-```
-trump-market-impact/
-├── step1_fetch_posts.py          # Fetch Truth Social posts
-├── step2_classify_posts.py       # NLP topic + sentiment classification
-├── step3_fetch_market_data.py    # Databento order book fetching
-├── step4_compute_abnormal_returnsv2.py  # Event study computation
-├── step5_visualise.py            # Static charts
-├── step6_dashboard.py            # Streamlit interactive dashboard
-├── checks                        # Quick validation script
-├── output/
-│   └── dashboard.png             # Static visualization output
-├── requirements.txt
-└── .env.example
-```
-
 ---
 
 ## Limitations
